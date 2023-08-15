@@ -1,0 +1,17 @@
+Generic Font Families
+In CSS there are five generic font families:
+
+1 Serif    fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+2 Sans-serif   fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+3 Monospace    fonts - here all the letters have the same fixed width. They create a mechanical look. 
+4 Cursive      fonts imitate human handwriting.
+5 Fantasy      fonts are decorative/playful fonts.
+
+
+
+Generic Font Family	 Examples of Font Names
+Serif	             "Times New Roman" Georgia Garamond
+Sans-serif	         Arial Verdana Helvetica
+Monospace	         Courier New Lucida Console Monaco
+Cursive	             "Brush Script MT" Lucida Handwriting
+Fantasy	             Copperplate Papyrus
