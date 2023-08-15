@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* The background-size property specifies the size of the background images.
+
+There are four different syntaxes you can use with this property: the keyword 
+syntax ("auto", "cover" and "contain"), the one-value syntax (sets the width of the 
+image (height becomes "auto"), the two-value syntax (first value: width of the image, 
+second value: height), and the multiple background syntax (separated with comma). */
+#example1 {
+  border: 2px solid black;
+  padding: 25px;
+  background: url("C:\\Users\\M waqas khan\\Downloads\\th (1).jpeg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#example2 {
+  border: 2px solid black;
+  padding: 25px;
+  background: url("C:\\Users\\M waqas khan\\Downloads\\th (1).jpeg");
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+}
+</style>
+</head>
+<body>
+
+<h2>background-size: auto (default):</h2>
+<div id="example1">
+  <h2>Hello World</h2>
+  <p>The background image is displayed in its original size.</p>
+</div>
+
+<h2>background-size: 300px 100px:</h2>
+<div id="example2">
+  <h2>Hello World</h2>
+  <p>Here, the background image is set to 300px wide and 100px high.</p>
+</div>
+
+</body>
+</html>
