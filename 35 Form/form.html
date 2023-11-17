@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        input[type=text],select{
+            width: 100%;
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 8px 0;
+        }
+        input[type=submit]{
+            background-color: rgb(61, 181, 61);
+            padding:14px 0 ;
+            border: none;
+            width: 100%;
+            border-radius: 4px;
+            margin: 8px 0;
+            font-size: 20px;
+        }
+        input[type=submit]:hover{
+            background-color: green;
+            color: white;
+            cursor: pointer;
+           
+        }
+        div{
+            background-color: lightgray;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Using html to style an html form</h1>
+    <div>
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" name="first name" id="fname" placeholder="your first name">
+            <label for="lname">First Name</label>
+            <input type="text" name="last name" id="lname" placeholder="your last name">
+            <label for="country">Country</label>
+            <select name="Country" id="country">
+                <option value="Pakistan">Pakistan</option>
+                <option value="canda">Canda</option>
+                <option value="hamas">hamas</option>
+            </select>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>

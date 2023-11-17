@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form style</title>
+    <style>
+        *{box-sizing: border-box;}
+        input[type=text],textarea,select{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        label{
+            padding: 12px 20px 0 0px ;
+            display: inline-block;
+         }
+        .col25{
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        .col75{
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        textarea{
+            height: 200px;
+        }
+        input[type=submit]{
+            background-color: #04aa6d;
+            padding: 12px 25px;
+            float: right;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+        input[type=submit]:hover{
+            background-color: #9ac90b;
+        }
+        .container{
+            background-color:#f2f2f2;
+            padding: 20px;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* if screen width is 600 or less than 600px then the below porperty
+        will be applied on the form */
+        @media screen and (max-width:600px) {
+            .col25,.col75,input[type=text]{
+                width: 100%;
+                margin-top: 0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col25">
+                <label for="fname">First Name</label>
+            </div>
+            <div class="col75">
+                <input type="text" name="first-name" id="fname" placeholder="First Name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col25">
+                <label for="lname">Last Name</label>
+            </div>
+            <div class="col75">
+                <input type="text" name="Last-name" id="lname" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col25">
+                <label for="country">Country</label>
+            </div>
+            <div class="col75">
+                <select name="country" id="country">
+                    <option value="australia">australia</option>
+                    <option value="canada">canada</option>
+                    <option value="beljium">beljium</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col25">
+                <label for="subject">Subject</label>
+            </div>
+            <div class="col75">
+                <textarea name="" id="subject" >enter text</textarea>
+            </div>
+        </div>
+        <div class="row">
+                <input type="submit" name="submit" value="submit">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

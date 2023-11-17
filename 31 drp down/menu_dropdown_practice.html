@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dropdown</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        overflow: hidden;
+      }
+      li {
+    
+        display: inline-block;
+      }
+      li>a{
+       display: inline-block;
+        color: white;
+        text-decoration: none;
+         padding: 18px 16px;
+         
+
+      }
+       .contant {
+        position: absolute;
+        display: none;
+      } 
+      .dropdown:hover .contant{
+        display: block;
+        background-color: lightblue;
+        width: 160px;
+    }
+    .contant a{
+        display: block;
+        text-decoration: none;
+        padding: 14px 16px;
+    }
+    .contant a:hover{
+        background-color: gray;
+    }
+    </style> 
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">News</a></li>
+        <li class="dropdown">
+          <a href="#">more</a>
+          <div class="contant">
+            <a href="#">machaster</a>
+            <a href="#">haway</a>
+            <a href="#">galaxy</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
