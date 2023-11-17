@@ -1,0 +1,13 @@
+
+Function	                 Description
+matrix(n,n,n,n,n,n)	       Defines a 2D transformation, using a matrix of six values
+translate(x,y)	 Defines a 2D translation, moving the element along the X- and the Y-axis
+translateX(n)	     Defines a 2D translation, moving the element along the X-axis
+translateY(n)	     Defines a 2D translation, moving the element along the Y-axis
+scale(x,y)	    Defines a 2D scale transformation, changing the elements width and height
+scaleX(n)	         Defines a 2D scale transformation, changing the element's width
+scaleY(n)	         Defines a 2D scale transformation, changing the element's height
+rotate(angle)	     Defines a 2D rotation, the angle is specified in the parameter
+skew(x-angle,y-angle)	Defines a 2D skew transformation along the X- and the Y-axis
+skewX(angle)	     Defines a 2D skew transformation along the X-axis
+skewY(angle)	     Defines a 2D skew transformation along the Y-axis
